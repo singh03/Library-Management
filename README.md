@@ -1,7 +1,7 @@
-#Library Management System (Spring Boot)
+# Library Management System (Spring Boot)
 A simple REST-based Library Management Mini-System built with Spring Boot as an interview task. It supports basic operations for managing books and members, including borrowing and returning books. The system uses MySQL for persistence.
 
-##Features
+## Features
 Add, update, delete books and members
 
 Borrow and return books
@@ -14,22 +14,13 @@ Limits a member to borrow max 3 books
 ## MySQL Setup
 Make sure MySQL is installed and running. Create a database:
 
-sql
-Copy
-Edit
 CREATE DATABASE library_db;
-🧾 application.properties
-Already configured to use MySQL:
-
 
 ## API Endpoints
-📘 Books
-Add Book
+# Books
+# Add Book
 POST /api/books
 
-json
-Copy
-Edit
 {
   "title": "The Alchemist",
   "author": "Paulo Coelho"
@@ -46,7 +37,7 @@ PUT /api/books/{bookId}
 Delete Book
 DELETE /api/books/{bookId}
 
-Members
+# Members
 Add Member
 POST /api/members
 
@@ -66,8 +57,8 @@ PUT /api/members/{memberId}
 Delete Member
 DELETE /api/members/{memberId}
 
-Borrow & Return
-Borrow Book
+# Borrow & Return
+# Borrow Book
 POST /api/borrow
 
 {
@@ -75,7 +66,7 @@ POST /api/borrow
   "bookId": "book-uuid-here"
 }
 
-Return Book
+# Return Book
 POST /api/return
 
 {
